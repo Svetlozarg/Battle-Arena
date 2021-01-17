@@ -1,0 +1,209 @@
+:root {
+  font-size: 10px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'montserrat', sans-serif;
+  color: white;
+}
+body {
+  background: linear-gradient(#3a3a3aba, #2a2a2acc), url('https://wallpaperaccess.com/full/3721480.jpg') no-repeat top center;
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-left:  20rem;
+}
+.adventures-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1400px;
+  height: 800px;
+  padding: 2rem 3rem;
+  background: linear-gradient(#3a3a3a9a, #2a2a2aa2), url('https://wallpaperaccess.com/full/380889.jpg') no-repeat top center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  border: 1px solid rgb(88, 88, 88);
+  -webkit-box-shadow: 0px 0px 38px 3px rgba(0,0,0,0.99); 
+  box-shadow: 0px 0px 38px 3px rgba(0,0,0,0.99);
+}
+.adventure-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 400px;
+  padding: 2rem 3rem;
+  background: linear-gradient(#5251519a, #414040a2);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  border: 1px solid rgb(88, 88, 88);
+  -webkit-box-shadow: 0px 0px 38px 3px rgba(0,0,0,0.99); 
+  box-shadow: 0px 0px 38px 3px rgba(0,0,0,0.99);
+  margin: 0 5rem 2rem 5rem;
+  text-align: center;
+}
+.adventure-box:hover {
+  background: linear-gradient(#7979799a, #414040a2);
+}
+.adventures-box-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.adventure-title-easy {
+  font-size: 2rem;
+  color: rgb(37, 207, 37);
+  font-weight: 800;
+  letter-spacing: 8px;
+  padding: 2rem 0 0rem 0;
+}
+.adventure-title-medium {
+  font-size: 2rem;
+  color: rgb(207, 142, 37);
+  font-weight: 800;
+  letter-spacing: 8px;
+  padding: 2rem 0 0rem 0;
+}
+.adventure-title-hard {
+  font-size: 2rem;
+  color: rgb(207, 37, 37);
+  font-weight: 800;
+  letter-spacing: 8px;
+  padding: 2rem 0 0rem 0;
+}
+.adventure-desc {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: rgb(214, 214, 214);
+  text-align: justify;
+  min-height: 120px;
+}
+.adventure-img {
+  width: 200px;
+  border-radius: 50px;
+  border: 3px solid black;
+  margin: 2rem 0 2rem 0;
+}
+.btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.btn-desc {
+  width: 200px;
+}
+.btn-box {
+  margin: 0 13rem;
+}
+.bottom-text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: center;
+}
+@media only screen and (max-width: 1600px) {
+  .adventures-wrapper {
+    width: 1100px;
+    height: 700px;
+    padding: 2rem 6rem;
+  }
+  .adventure-box {
+    width: 300px;
+    height: 350px;
+    padding: 2rem 1rem;
+    margin: 0 3rem 2rem 3rem;
+  }
+  .adventure-title-easy {
+    font-size: 1.5rem;
+    color: rgb(37, 207, 37);
+    letter-spacing: 4px;
+  }
+  .adventure-title-medium {
+    color: rgb(207, 142, 37);
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+  }
+  .adventure-title-hard {
+    color: rgb(207, 37, 37);
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+  }
+  .adventure-desc {
+    font-size: 1.2rem;
+  }
+  .btn-desc {
+    width: 200px;
+  }
+  .btn-box {
+    margin: 0 8rem;
+  }
+  .bottom-text {
+    font-size: 1.3rem;
+  }
+}
+.progress-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.progress-bar {
+  width: 0%;
+}
+.timer-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+.timer-title {
+  font-size: 3.5rem;
+  color:  rgb(214, 214, 214);
+  font-weight: 800;
+  letter-spacing: 10px;
+}
+.timer-desc {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  color:  rgb(214, 214, 214);
+  text-align: center;
+}
+.skip-adventure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+.skip-box {
+  background-color: #2a2a2abb;
+  padding: 2.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.skip-box:hover {
+  background-color: #2a2a2a;
+}
+.skip-img {
+  width: 20px;
+}
+.skip-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-left: 1rem;
+}

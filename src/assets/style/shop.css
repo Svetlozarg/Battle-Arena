@@ -1,0 +1,207 @@
+:root {
+  font-size: 10px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'montserrat', sans-serif;
+  color: white;
+}
+body {
+  background: linear-gradient(#3a3a3aba, #2a2a2acc), url('https://wallpaperaccess.com/full/3721480.jpg') no-repeat top center;
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-left:  20rem;
+}
+.shop-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 1400px;
+  height: 800px;
+  padding: 2rem 10rem;
+  background: linear-gradient(#3a3a3a77, #2a2a2a71), url('https://preview.redd.it/zyx1ckankka31.jpg?auto=webp&s=0a15483e48a8ddbd77978f37559ae850a3ccdb85') no-repeat top center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  border: 1px solid rgb(88, 88, 88);
+  -webkit-box-shadow: 0px 0px 38px 3px rgba(0,0,0,0.99); 
+  box-shadow: 0px 0px 38px 3px rgba(0,0,0,0.99);
+}
+.shop-image {
+  margin: 0 0.5rem;
+  text-align: center;
+  width: 600px;
+  border: 3px solid rgba(255, 196, 0, 0.445);
+  border-radius: 5px;
+}
+.shop {
+  margin: 5rem 0rem;
+}
+.error {
+  position: absolute;
+  top: 53%;
+  left: 28%;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: red;
+  animation: errorAnimation ease 3s;
+  -webkit-animation: errorAnimation ease 3s;
+  -moz-animation: errorAnimation ease 3s;
+  -o-animation: errorAnimation ease 3s;
+  -ms-animation: errorAnimation ease 3s;
+}
+@keyframes errorAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.shop-top {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+.shop-bottom {
+  display: flex;
+  flex-direction: row;
+}
+.box img {
+  width: 135px;
+  height: 145px;
+}
+.hvrbox {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+.hvrbox .hvrbox-layer_top {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 15px;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+  opacity: 1;
+}
+.hvrbox .hvrbox-text {
+  text-align: center;
+  font-size: 1.5rem;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.hover-name {
+  color: rgb(0, 195, 255);
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+.hover-rarity {
+  color: rgb(0, 153, 255);
+  font-weight: 400;
+}
+.hover-dmg {
+  color: rgb(255, 0, 0);
+}
+.hover-cost {
+  font-size: 1.2rem;
+}
+.shop-flex {
+  display: flex;
+  flex-direction: row;
+}
+.shop-menu {
+  margin: 5rem 0rem;
+  margin-left: 1rem;
+  transition: 1s;
+}
+.shop-menu div:hover {
+  background: linear-gradient(#3a3a3a77, #2a2a2a71), url('https://preview.redd.it/zyx1ckankka31.jpg?auto=webp&s=0a15483e48a8ddbd77978f37559ae850a3ccdb85') no-repeat top center;
+}
+.shop-menu-hovered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 90px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border: 2px solid #d4af378e;
+  background: linear-gradient(#3a3a3a77, #2a2a2a71), url('https://preview.redd.it/zyx1ckankka31.jpg?auto=webp&s=0a15483e48a8ddbd77978f37559ae850a3ccdb85') no-repeat top center;
+}
+.shop-menu-img {
+  width: 50px;
+}
+.weapons-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 90px;
+  background: url("https://4.imimg.com/data4/KW/PQ/MY-28216373/black-slate-stone-250x250.jpeg");
+  cursor: pointer;
+  font-size: 1.5rem;
+  border: 2px solid #d4af378e;
+}
+.armor-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 90px;
+  background: url("https://4.imimg.com/data4/KW/PQ/MY-28216373/black-slate-stone-250x250.jpeg");
+  cursor: pointer;
+  font-size: 1.5rem;
+  border: 2px solid #d4af378e;
+}
+.potions-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 90px;
+  background: url("https://4.imimg.com/data4/KW/PQ/MY-28216373/black-slate-stone-250x250.jpeg");
+  cursor: pointer;
+  font-size: 1.5rem;
+  border: 2px solid #d4af378e;
+}
+.runes-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 90px;
+  background: url("https://4.imimg.com/data4/KW/PQ/MY-28216373/black-slate-stone-250x250.jpeg");
+  cursor: pointer;
+  font-size: 1.5rem;
+  border: 2px solid #d4af378e;
+}
