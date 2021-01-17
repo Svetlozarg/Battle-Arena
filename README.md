@@ -1,4 +1,4 @@
-# battle-arena
+# Battle-Arena
 battle-arena-dd796.web.app
 
 Battle Arena is a browser game created with Vue.js and Firebase. 
