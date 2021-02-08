@@ -1,5 +1,4 @@
 # Battle-Arena
-battle-arena-dd796.web.app
 
 <a href="https://battle-arena-dd796.web.app/profile">Link to Battle-Arena</a>
 
